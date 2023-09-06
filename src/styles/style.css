@@ -381,6 +381,7 @@ iframe {
 
 .wrapper {
   width: 50%;
+  min-width: 450px;
   position: relative;
 }
 
@@ -406,7 +407,7 @@ iframe {
 }
 
 .play {
-  height: 130px;
+  height: 100px;
 }
 
 .play_text {
@@ -512,6 +513,17 @@ iframe {
 
   .table_image {
     width: 45%;
+  }
+}
+
+@media (max-width: 910px) {
+  main > div:first-of-type {
+    flex-direction: column;
+  }
+
+  main > div:first-of-type > div:last-of-type {
+    min-width: auto;
+    max-width: 100%;
   }
 }
 
