@@ -53,6 +53,9 @@ main > div:first-of-type {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
   gap: 30px ;
 }
 
@@ -72,14 +75,12 @@ main > div:first-of-type > div:last-of-type {
 }
 
 h1 {
-  margin-left: auto;
   font-size: 3em;
   color: #fff;
   font-weight: 800;
   text-align: center;
   position: relative;
   z-index: 100;
-  margin-right: auto;
 }
 
 main {
@@ -271,8 +272,8 @@ footer > p {
 header > div:first-of-type > div {
   margin: 0 auto;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
+  justify-content: space-evenly;
 }
 
 header > div:first-of-type {
@@ -448,29 +449,25 @@ iframe {
 }
 
 @media (min-width: 76px) {
-  header > div:first-of-type > div, h1, .container {
+  header > div:first-of-type > div, .container {
     width: 90%;
   }
 }
 
 @media (min-width: 7768px) {
-  header > div:first-of-type > div, h1, .container {
+  header > div:first-of-type > div, .container {
     max-width: 720px;
   }
 }
 
 @media (min-width: 1024px) {
-  header > div:first-of-type > div, h1, .container {
+  header > div:first-of-type > div, .container {
     max-width: 960px;
   }
 }
 
 @media (min-width: 1200px) {
-  header > div:first-of-type > div, h1, .container {
-    max-width: 1282px;
-  }
-
-  h1 {
+  header > div:first-of-type > div, .container {
     max-width: 1282px;
   }
 }
@@ -488,6 +485,10 @@ iframe {
 @media (max-width: 1024px) {
   .header_container, .tables {
     flex-direction: column;
+  }
+
+  main > div:first-of-type {
+    width: 100%;
   }
 
   .container {
